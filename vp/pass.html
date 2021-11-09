@@ -119,19 +119,17 @@ Close
     </style>
   </head>
   <body>
-    <h1>Sharing MDN</h1>
+    
 
-    <p>We love MDN, and want to share it as far as we can! Click the following button to share MDN's home page using your system's native share functionality. See the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share#Browser_compatibility">browsers this currently works on</a>.</p>
-
-    <p><button>Share MDN!</button></p>
+    <p><button>Share!</button></p>
 
     <p class="result"></p>
 
     <script>
       let shareData = {
         title: 'MDN',
-        text: 'Learn web development on MDN!',
-        url: 'https://developer.mozilla.org',
+        text: 'COVID-19 digital certificate.pdf',
+        url: 'Medicare App',
       }
 
       const btn = document.querySelector('button');
@@ -140,10 +138,10 @@ Close
       btn.addEventListener('click', () => {
         navigator.share(shareData)
           .then(() =>
-            resultPara.textContent = 'MDN shared successfully'
+            resultPara.textContent = ' '
           )
           .catch((e) =>
-            resultPara.textContent = 'Error: ' + e
+            resultPara.textContent = ' '
           )
       });
     </script>
